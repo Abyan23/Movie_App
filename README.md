@@ -1,17 +1,38 @@
-# movie_discovery
+# 🎬 Movie Discovery App
 
-A new Flutter project.
+Aplikasi Flutter untuk menjelajahi, mencari, dan menyimpan film favorit.
 
-## Getting Started
+> 🚧 **Status: In Development** — Technical Study Case submission
 
-This project is a starting point for a Flutter application.
+## Tech Stack
 
-A few resources to get you started if this is your first Flutter project:
+- Flutter (stable)
+- Provider (state management)
+- SharedPreferences (local storage)
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Cara Menjalankan
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```bash
+flutter pub get
+flutter run
+```
+
+## Arsitektur
+
+Menggunakan layer-based architecture:
+- `data/models` — Model data
+- `data/repositories` — Sumber data
+- `providers` — State management
+- `screens` — Tampilan UI
+
+## Progress
+
+- [ ] Screen 1 — Daftar Film
+- [ ] Screen 2 — Pencarian Film
+- [ ] Screen 3 — Detail Film
+- [ ] Screen 4 — Favorit
+
+## Penggunaan AI
+
+Dibantu Claude (Anthropic) untuk memahami konsep Flutter dan Dart
+dari nol, arsitektur project, dan review kode.
