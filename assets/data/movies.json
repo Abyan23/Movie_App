@@ -1,0 +1,35 @@
+[
+    {
+        "id": "1",
+        "titte": "Inception",
+        "overview":"Seorang pencuri yang masuk ke dalam mimpi orang lain untuk mencuri rahasia." ,
+        "release_date": "2010-07-16" ,
+        "vote_average": 8.8, 
+        "runtime": 148 ,
+        "genres":["Action","Sci-Fi","Thriller"],
+        "poster_url":"https://picsum.photos/seed/movie1/500/750",
+        "backdrop_url":"https://picsum.photos/seed/movie1back/1280/720" 
+    },
+{
+    "id": 2,
+    "title": "Interstellar",
+    "overview": "Sekelompok astronot melakukan perjalanan melalui lubang cacing untuk menyelamatkan umat manusia.",
+    "release_date": "2014-11-07",
+    "vote_average": 8.6,
+    "runtime": 169,
+    "genres": ["Adventure", "Drama", "Sci-Fi"],
+    "poster_url": "https://picsum.photos/seed/movie2/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie2back/1280/720"
+  },
+  {
+    "id": 3,
+    "title": "The Dark Knight",
+    "overview": "Batman menghadapi Joker, kriminal terbesar yang pernah ada di Gotham.",
+    "release_date": "2008-07-18",
+    "vote_average": 9.0,
+    "runtime": 152,
+    "genres": ["Action", "Crime", "Drama"],
+    "poster_url": "https://picsum.photos/seed/movie3/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie3back/1280/720"
+  }
+]
