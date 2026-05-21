@@ -31,5 +31,192 @@
     "genres": ["Action", "Crime", "Drama"],
     "poster_url": "https://picsum.photos/seed/movie3/500/750",
     "backdrop_url": "https://picsum.photos/seed/movie3back/1280/720"
+  },
+  {
+    "id": 4,
+    "title": "The Godfather",
+    "overview": "Kisah keluarga mafia Corleone yang penuh intrik dan kekuasaan.",
+    "release_date": "1972-03-24",
+    "vote_average": 9.2,
+    "runtime": 175,
+    "genres": ["Crime", "Drama"],
+    "poster_url": "https://picsum.photos/seed/movie4/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie4back/1280/720"
+  },
+  {
+    "id": 5,
+    "title": "Pulp Fiction",
+    "overview": "Kisah-kisah kriminal yang saling terhubung di Los Angeles.",
+    "release_date": "1994-10-14",
+    "vote_average": 8.9,
+    "runtime": 154,
+    "genres": ["Crime", "Drama"],
+    "poster_url": "https://picsum.photos/seed/movie5/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie5back/1280/720"
+  },
+  {
+    "id": 6,
+    "title": "The Shawshank Redemption",
+    "overview": "Seorang bankir yang dipenjara karena dituduh membunuh istrinya berjuang untuk bertahan hidup.",
+    "release_date": "1994-09-23",
+    "vote_average": 9.3,
+    "runtime": 142,
+    "genres": ["Drama"],
+    "poster_url": "https://picsum.photos/seed/movie6/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie6back/1280/720"
+  },
+  {
+    "id": 7,
+    "title": "Avengers: Endgame",
+    "overview": "Para Avenger berkumpul untuk membalikkan kerusakan yang dilakukan Thanos.",
+    "release_date": "2019-04-26",
+    "vote_average": 8.4,
+    "runtime": 181,
+    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "poster_url": "https://picsum.photos/seed/movie7/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie7back/1280/720"
+  },
+  {
+    "id": 8,
+    "title": "Spirited Away",
+    "overview": "Seorang gadis kecil tersesat di dunia roh dan harus bekerja untuk kembali ke dunia nyata.",
+    "release_date": "2001-07-20",
+    "vote_average": 8.6,
+    "runtime": 125,
+    "genres": ["Animation", "Adventure", "Fantasy"],
+    "poster_url": "https://picsum.photos/seed/movie8/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie8back/1280/720"
+  },
+  {
+    "id": 9,
+    "title": "The Matrix",
+    "overview": "Seorang hacker menemukan bahwa realitas yang ia kenal hanyalah simulasi komputer.",
+    "release_date": "1999-03-31",
+    "vote_average": 8.7,
+    "runtime": 136,
+    "genres": ["Action", "Sci-Fi"],
+    "poster_url": "https://picsum.photos/seed/movie9/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie9back/1280/720"
+  },
+  {
+    "id": 10,
+    "title": "Parasite",
+    "overview": "Keluarga miskin yang perlahan menyusup ke kehidupan keluarga kaya.",
+    "release_date": "2019-05-30",
+    "vote_average": 8.5,
+    "runtime": 132,
+    "genres": ["Drama", "Thriller"],
+    "poster_url": "https://picsum.photos/seed/movie10/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie10back/1280/720"
+  },
+  {
+    "id": 11,
+    "title": "Whiplash",
+    "overview": "Seorang drummer muda berjuang keras di bawah bimbingan instruktur musik yang kejam.",
+    "release_date": "2014-10-10",
+    "vote_average": 8.5,
+    "runtime": 107,
+    "genres": ["Drama", "Music"],
+    "poster_url": "https://picsum.photos/seed/movie11/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie11back/1280/720"
+  },
+  {
+    "id": 12,
+    "title": "Forrest Gump",
+    "overview": "Kisah hidup seorang pria sederhana yang tanpa sengaja terlibat dalam berbagai peristiwa bersejarah.",
+    "release_date": "1994-07-06",
+    "vote_average": 8.8,
+    "runtime": 142,
+    "genres": ["Drama", "Romance"],
+    "poster_url": "https://picsum.photos/seed/movie12/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie12back/1280/720"
+  },
+  {
+    "id": 13,
+    "title": "Dune",
+    "overview": "Seorang pemuda berbakat memimpin pemberontakan di planet gurun penghasil rempah terberharga di alam semesta.",
+    "release_date": "2021-10-22",
+    "vote_average": 8.0,
+    "runtime": 155,
+    "genres": ["Action", "Adventure", "Sci-Fi"],
+    "poster_url": "https://picsum.photos/seed/movie13/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie13back/1280/720"
+  },
+  {
+    "id": 14,
+    "title": "Joker",
+    "overview": "Kisah asal usul Arthur Fleck yang berubah menjadi penjahat ikonik Joker.",
+    "release_date": "2019-10-04",
+    "vote_average": 8.4,
+    "runtime": 122,
+    "genres": ["Crime", "Drama", "Thriller"],
+    "poster_url": "https://picsum.photos/seed/movie14/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie14back/1280/720"
+  },
+  {
+    "id": 15,
+    "title": "Your Name",
+    "overview": "Dua remaja yang tinggal di kota dan desa secara misterius bertukar tubuh.",
+    "release_date": "2016-08-26",
+    "vote_average": 8.4,
+    "runtime": 106,
+    "genres": ["Animation", "Drama", "Romance"],
+    "poster_url": "https://picsum.photos/seed/movie15/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie15back/1280/720"
+  },
+  {
+    "id": 16,
+    "title": "Gladiator",
+    "overview": "Seorang jenderal Romawi yang dikhianati berjuang sebagai gladiator untuk membalas dendam.",
+    "release_date": "2000-05-05",
+    "vote_average": 8.5,
+    "runtime": 155,
+    "genres": ["Action", "Adventure", "Drama"],
+    "poster_url": "https://picsum.photos/seed/movie16/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie16back/1280/720"
+  },
+  {
+    "id": 17,
+    "title": "The Lion King",
+    "overview": "Simba si anak singa harus menghadapi masa lalunya dan mengklaim takhtanya.",
+    "release_date": "1994-06-15",
+    "vote_average": 8.5,
+    "runtime": 88,
+    "genres": ["Animation", "Adventure", "Drama"],
+    "poster_url": "https://picsum.photos/seed/movie17/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie17back/1280/720"
+  },
+  {
+    "id": 18,
+    "title": "Oppenheimer",
+    "overview": "Kisah J. Robert Oppenheimer dan perannya dalam pengembangan bom atom pertama.",
+    "release_date": "2023-07-21",
+    "vote_average": 8.6,
+    "runtime": 180,
+    "genres": ["Drama", "History", "Thriller"],
+    "poster_url": "https://picsum.photos/seed/movie18/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie18back/1280/720"
+  },
+  {
+    "id": 19,
+    "title": "Get Out",
+    "overview": "Seorang pria kulit hitam mengunjungi keluarga kekasihnya yang kulit putih dan menemukan rahasia gelap.",
+    "release_date": "2017-02-24",
+    "vote_average": 7.7,
+    "runtime": 104,
+    "genres": ["Horror", "Mystery", "Thriller"],
+    "poster_url": "https://picsum.photos/seed/movie19/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie19back/1280/720"
+  },
+  {
+    "id": 20,
+    "title": "Everything Everywhere All at Once",
+    "overview": "Seorang wanita paruh baya harus menjelajahi multiverse untuk menyelamatkan dunia.",
+    "release_date": "2022-03-25",
+    "vote_average": 8.0,
+    "runtime": 139,
+    "genres": ["Action", "Adventure", "Comedy"],
+    "poster_url": "https://picsum.photos/seed/movie20/500/750",
+    "backdrop_url": "https://picsum.photos/seed/movie20back/1280/720"
   }
 ]
