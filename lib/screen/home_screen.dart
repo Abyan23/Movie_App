@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:movie_discovery/data/models/movie.dart';
+import 'package:movie_discovery/screen/search_screen.dart';
 import 'package:provider/provider.dart';
 import '../providers/movie_provider.dart';
+import '../providers/fav_provider.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -24,7 +26,18 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Movie Discovery'),
-        
+        actions: [
+          IconButton(
+            icon : const Icon(Icons.search),  
+            onPressed: (){
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const SearchScreen(),  
+                )
+              );
+            },
+      )],
       ),
       body: Consumer<MovieProvider>(
         builder: (context, provider, child){
@@ -52,28 +65,68 @@ if (provider.movies.isEmpty) {
   );
 }
 
-return GridView.builder(
-  padding: const EdgeInsets.all(12),
-  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-    crossAxisCount: 2,
-    crossAxisSpacing: 12,
-    mainAxisSpacing: 12,
-    childAspectRatio: 0.55,
-  ),
-  itemCount: provider.movies.length,
-  itemBuilder: (context, index) {
-    final movie = provider.movies[index];
-    return Card(
-      clipBehavior: Clip.antiAlias,
+return RefreshIndicator(
+  onRefresh: () => context.read<MovieProvider>().loadMovies(),
+  child: GridView.builder(
+    padding: const EdgeInsets.all(12),
+    gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+      crossAxisCount: 2,
+      crossAxisSpacing: 12,
+      mainAxisSpacing: 12,
+      childAspectRatio: 0.6,
+    ),
+    itemCount: provider.movies.length,
+itemBuilder: (context, index) {
+  final movie = provider.movies[index];
+  return Card(
+    clipBehavior: Clip.antiAlias,
+    child: InkWell(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const Placeholder(),
+          ),
+        );
+      },
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Expanded(
-            flex: 3,
-            child: Image.network(
-              movie.posterUrl,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            flex: 2,
+            child: Stack(
+              children: [
+                Image.network(
+                  movie.posterUrl,
+                  width: double.infinity,
+                  height: double.infinity,
+                  fit: BoxFit.cover,
+                ),
+                Positioned(
+                  top: 4,
+                  right: 4,
+                  child: Consumer<FavProvider>(
+                    builder: (context, fav, _) {
+                      final isFav = fav.favorite.any((m) => m.id == movie.id);
+                      return GestureDetector(
+                        onTap: () => fav.toggleFavorite(movie),
+                        child: Container(
+                          padding: const EdgeInsets.all(4),
+                          decoration: BoxDecoration(
+                            color: Colors.black.withOpacity(0.5),
+                            shape: BoxShape.circle,
+                          ),
+                          child: Icon(
+                            isFav ? Icons.favorite : Icons.favorite_border,
+                            color: isFav ? Colors.red : Colors.white,
+                            size: 16,
+                          ),
+                        ),
+                      );
+                    },
+                  ),
+                ),
+              ],
             ),
           ),
           Padding(
@@ -116,8 +169,10 @@ return GridView.builder(
           ),
         ],
       ),
-    );
-  },
+    ),
+  );
+},
+  ),
 );
 
         },)
