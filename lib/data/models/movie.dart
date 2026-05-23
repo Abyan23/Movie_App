@@ -22,19 +22,19 @@ class Movie {
   });
 
   // Konversi JSON → object Movie
-  factory Movie.fromJson(Map<String, dynamic> json) {
-    return Movie(
-      id: json['id'],
-      title: json['title'],
-      overview: json['overview'],
-      releaseDate: json['release_date'],
-      voteAverage: (json['vote_average'] as num).toDouble(),
-      runtime: json['runtime'],
-      genres: List<String>.from(json['genres']),
-      posterUrl: json['poster_url'],
-      backdropUrl: json['backdrop_url'],
-    );
-  }
+factory Movie.fromJson(Map<String, dynamic> json) {
+  return Movie(
+    id: (json['id'] as num).toInt(),
+    title: json['title'],
+    overview: json['overview'],
+    releaseDate: json['release_date'],
+    voteAverage: (json['vote_average'] as num).toDouble(),
+    runtime: (json['runtime'] as num).toInt(),
+    genres: List<String>.from(json['genres']),
+    posterUrl: json['poster_url'],
+    backdropUrl: json['backdrop_url'],
+  );
+}
 
   // Konversi object Movie → JSON (untuk simpan favorit)
   Map<String, dynamic> toJson() => {

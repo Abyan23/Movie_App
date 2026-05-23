@@ -1,7 +1,7 @@
 [
     {
-        "id": "1",
-        "titte": "Inception",
+        "id": 1,
+        "title": "Inception",
         "overview":"Seorang pencuri yang masuk ke dalam mimpi orang lain untuk mencuri rahasia." ,
         "release_date": "2010-07-16" ,
         "vote_average": 8.8, 
