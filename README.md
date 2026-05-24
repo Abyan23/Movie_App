@@ -27,10 +27,10 @@ Menggunakan layer-based architecture:
 
 ## Progress
 
-- [ ] Screen 1 — Daftar Film
-- [ ] Screen 2 — Pencarian Film
-- [ ] Screen 3 — Detail Film
-- [ ] Screen 4 — Favorit
+- [✓] Screen 1 — Daftar Film
+- [✓] Screen 2 — Pencarian Film
+- [✓] Screen 3 — Detail Film
+- [✓] Screen 4 — Favorit
 
 ## Penggunaan AI
 
