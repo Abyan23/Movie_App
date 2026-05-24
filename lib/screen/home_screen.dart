@@ -4,6 +4,8 @@ import 'package:movie_discovery/screen/search_screen.dart';
 import 'package:provider/provider.dart';
 import '../providers/movie_provider.dart';
 import '../providers/fav_provider.dart';
+import '../screen/details_screen.dart';
+import '../screen/fav_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -37,7 +39,18 @@ class _HomeScreenState extends State<HomeScreen> {
                 )
               );
             },
-      )],
+      ),
+      IconButton(
+        icon: const Icon(Icons.favorite),
+          onPressed: (){
+            Navigator.push(
+              context,
+              MaterialPageRoute(
+                builder: ((context) => FavScreen())
+            ));
+          } ,
+        )
+      ],
       ),
       body: Consumer<MovieProvider>(
         builder: (context, provider, child){
@@ -85,7 +98,7 @@ itemBuilder: (context, index) {
         Navigator.push(
           context,
           MaterialPageRoute(
-            builder: (context) => const Placeholder(),
+            builder: (context) => DetailScreen(movie: movie),
           ),
         );
       },

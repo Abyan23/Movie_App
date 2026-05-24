@@ -9,8 +9,7 @@ void main() {
     MultiProvider(
       providers: [
         ChangeNotifierProvider(create: (_) => MovieProvider()),
-        ChangeNotifierProvider(create: (_) => FavProvider()),
-        
+        ChangeNotifierProvider(create: (_) => FavProvider()..loadFavorites()),
       ],
       child : const MyApp(), 
       ),
