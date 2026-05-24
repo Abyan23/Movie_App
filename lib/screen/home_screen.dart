@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:movie_discovery/data/models/movie.dart';
 import 'package:movie_discovery/screen/search_screen.dart';
 import 'package:provider/provider.dart';
 import '../providers/movie_provider.dart';
@@ -15,12 +14,26 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+  final ScrollController _scrollController = ScrollController();
   @override
   void initState() {
     super.initState();
     Future.microtask(() =>
       context.read<MovieProvider>().loadMovies()
     );
+
+    _scrollController.addListener(() {
+      if (_scrollController.position.pixels >= 
+          _scrollController.position.maxScrollExtent - 200) {
+            context.read<MovieProvider>().loadMore();
+          }
+    });
+  }
+
+  @override 
+  void dispose() {
+    _scrollController.dispose();
+    super.dispose();
   }
 
   @override
@@ -81,6 +94,7 @@ if (provider.movies.isEmpty) {
 return RefreshIndicator(
   onRefresh: () => context.read<MovieProvider>().loadMovies(),
   child: GridView.builder(
+    controller: _scrollController,
     padding: const EdgeInsets.all(12),
     gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
       crossAxisCount: 2,
@@ -103,7 +117,7 @@ itemBuilder: (context, index) {
         );
       },
       child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Expanded(
             flex: 2,
@@ -126,7 +140,7 @@ itemBuilder: (context, index) {
                         child: Container(
                           padding: const EdgeInsets.all(4),
                           decoration: BoxDecoration(
-                            color: Colors.black.withOpacity(0.5),
+                            color: Colors.black.withValues(alpha: 0.5),
                             shape: BoxShape.circle,
                           ),
                           child: Icon(
