@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import '../providers/movie_provider.dart';
-import '../data/models/movie.dart';
 import 'dart:async';
 
 class SearchScreen extends StatefulWidget {
@@ -29,7 +28,7 @@ class _SearchScreenState extends State<SearchScreen> {
         title: TextField(
           controller: _controller,
           decoration: const InputDecoration(
-            hintText: 'Cari film...',
+            hintText: 'Cari film',
             border: InputBorder.none,
           ),
           onChanged: (value) {

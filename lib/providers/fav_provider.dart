@@ -10,7 +10,7 @@ class FavProvider extends ChangeNotifier{
 
 Future<void> loadFavorites() async {
   final prefs = await SharedPreferences.getInstance();
-  final jsonList = prefs.getStringList('Favorite') ?? [];
+  final jsonList = prefs.getStringList('Favorit') ?? [];
   _favorite = jsonList
   .map((s) => Movie.fromJson(jsonDecode(s)))
   .toList();
@@ -30,7 +30,7 @@ Future<void> loadFavorites() async {
   Future<void> _saveFavorites() async {
     final prefs = await SharedPreferences.getInstance();
     final jsonList = _favorite.map((m) => jsonEncode(m.toJson())).toList();
-    await prefs.setStringList('Favorite', jsonList);
+    await prefs.setStringList('Favorit', jsonList);
   }
 
 }

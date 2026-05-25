@@ -2,13 +2,20 @@
 
 Aplikasi Flutter untuk menjelajahi, mencari, dan menyimpan film favorit.
 
-> 🚧 **Status: In Development** — Technical Study Case submission
+> 🚧 **Selesai** — Technical Study Case submission
 
 ## Tech Stack
 
 - Flutter (stable)
 - Provider (state management)
 - SharedPreferences (local storage)
+
+## Unit test 
+- Mocktail
+List test
+1. Berhasil mengambil data film,
+2. Gagal mengambil data film,
+3. Pencarian data film berdasarkan string yang dimasukkan.
 
 ## Cara Menjalankan
 

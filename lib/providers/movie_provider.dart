@@ -9,7 +9,7 @@ class MovieProvider extends ChangeNotifier{
   List<Movie> _searchResults = [];
   List<Movie> _allMovies = [];
   int _currentPage = 0;
-  final int _perPage = 5;
+  final int _perPage = 10;
   bool _hasMore = true;
   bool get hasMore => _hasMore;
   bool _isLoading = false;

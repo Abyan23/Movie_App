@@ -78,7 +78,7 @@ class _HomeScreenState extends State<HomeScreen> {
                 children: [
                   Text('Error : ${provider.error}'),
                   ElevatedButton(onPressed: () => context.read<MovieProvider>().loadMovies(),
-                  child : const Text ('Retry'),
+                  child : const Text ('Coba Lagi ?'),
                   )
                 ],
               ),
